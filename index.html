@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barbecha store</title>
+    <link
+      rel="shortcut icon"
+      href="https://thumbs.dreamstime.com/b/sunflower-vector-illustration-isolated-background-213261247.jpg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style .css" />
+  </head>
+  <body>
+    <header>
+      <img
+        id="logo"
+        src="data:image/png;base64,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"
+      />
+      <h1>
+        Life is too short <br />
+        to wear boring <br />
+        clothes !
+      </h1>
+      <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img
+                src="https://barbecha.shop/wp-content/uploads/sb-instagram-feed-images/132287269_396685471385261_449613007702120786_nfull.jpg"
+                style="width: 100%"
+              />
+            </div>
+
+            <div class="item">
+              <img
+                src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_960,h_1193/https://barbecha.shop/wp-content/uploads/2018/09/47501777-D3D2-4990-9937-93CA157D480F.jpg "
+                style="width: 100%"
+              />
+            </div>
+
+            <div class="item">
+              <img
+                src="https://barbecha.shop/wp-content/uploads/sb-instagram-feed-images/133498212_782880955961407_6479255649000542354_nfull.jpg"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="right carousel-control"
+            href="#myCarousel"
+            data-slide="next"
+          >
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="bigBox">
+        <div class="card" style="width: 18rem">
+          <div class="fontawesome">
+            <button class="heartBtn">
+              <i class="far fa-heart"></i>
+            </button>
+            <button class="close">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <img
+            class="card-img-top"
+            src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_1242,h_1243/https://barbecha.shop/wp-content/uploads/2021/01/Photo-1-5-21-9-57-46-AM.jpg"
+            alt="Card image cap"
+          />
+          <p class="card-text">Trendy purple jacket</p>
+          <p><span class="prix">97</span>DT</p>
+          <div class="event">
+            <button class="btn-plus">+</button>
+            <span class="counter">0</span>
+            <button class="btn-minus">-</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <div class="fontawesome">
+            <button class="heartBtn">
+              <i class="far fa-heart"></i>
+            </button>
+            <button class="close">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <img
+            class="card-img-top"
+            src="https://i.pinimg.com/474x/e2/fd/86/e2fd8631240acdb29e43a4c3415b1796.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <p class="card-text">Silk dress</p>
+            <p><span class="prix">120</span>DT</p>
+          </div>
+          <div class="event">
+            <button class="btn-plus">+</button>
+            <span class="counter">0</span>
+            <button class="btn-minus">-</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <div class="fontawesome">
+            <button class="heartBtn">
+              <i class="far fa-heart"></i>
+            </button>
+            <button class="close">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <img
+            class="card-img-top"
+            src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_300/https://barbecha.shop/wp-content/uploads/2021/07/Photo-7-8-21-9-42-39-AM-300x300.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <p class="card-text">Mini hsira bag</p>
+            <p><span class="prix">110</span>DT</p>
+          </div>
+          <div class="event">
+            <button class="btn-plus">+</button>
+            <span class="counter">0</span>
+            <button class="btn-minus">-</button>
+          </div>
+        </div>
+      </div>
+      <div class="tootal">
+        <h3>Total</h3>
+        <span class="prixTotal">0</span>
+        <p>DT</p>
+      </div>
+    </main>
+
+    <footer class="bg-light text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <h2>Contact</h2>
+          <!-- Facebook -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #3b5998"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #55acee"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i>
+          </a>
+
+          <!-- Google -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #dd4b39"
+            href="#!"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #ac2bac"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <!-- Linkedin -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #0082ca"
+            href="#!"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <!-- Github -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #333333"
+            href="#!"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3">
+        Copyright @2021 | Designed With by Rock It
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <script type="text/javascript" src="./java.js"></script>
+  </body>
+</html>
